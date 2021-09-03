@@ -10,3 +10,13 @@ summary {
     margin: -.5em -.5em 0;
     padding: .5em;
 }
+
+.spoiler {
+  color: #aaa;
+  background-color: #aaa;
+}
+
+.spoiler:hover {
+  color: #111;
+  background-color:white;
+  }
