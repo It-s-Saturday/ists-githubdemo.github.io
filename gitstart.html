@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title></title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+</head>
+
+<body>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a href="gitstart.html" class="nav-link active">Getting Started</a>
+    </li>
+    <li class="nav-item">
+      <a href="gitchanges.html" class="nav-link">Making Changes</a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link">Feature Development</a>
+    </li>
+  </ul>
+  <h1>GitHub Init</h1>
+  <div class="container">
+    <p class="lead">
+      Welcome to It's Saturday, it's <em>kinda</em> good to see you!
+    </p>
+    <p>There are a couple of steps to get setup on GitHub to start getting those 'hours' in.</p>
+    <ol>
+      <li>Logging into <a href="https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home">GitHub</a></li>
+      <ul>
+        <li>Create an account, preferrably using your school email. (I say school email because they give you special features and goodies)</li>
+        <li>Fill out whatever they say, <em>feed</em> them your information...</li>
+      </ul>
+      <br>
+      <li>Joining the <em><b><a href="https://github.com/It-s-Saturday">organization</a></b></em></li>
+      <ul>
+        <li>Send me (Jibran) your username so I can invite you to have access.</li>
+      </ul>
+      <br>
+      <li><em>Cloning</em> our <a href="https://github.com/It-s-Saturday/MultiDest">current project</a></li>
+      <ul>
+        <li>Okay this is where it gets kinda <em>funky.</em></li>
+        <li>Install <a href="https://git-scm.com/">Git</a> for your device.</li>
+        <li>Now, open your command prompt or powershell and type <kbd>git</kbd> to see if it worked.</li>
+        <details>
+          <summary>What you should see</summary>
+          <img src="terminal.png" alt="example successful output">
+        </details>
+        <br>
+        <li>We have a couple of commands to get ourselves setup:
+          <ol>
+            <li>We need to <em>enter our desired directory.</em></li>
+            <li>Use the <kbd>ls</kbd> command, which stands for <b>l</b>i<b>s</b>t</li>
+            <ul>
+              <li>This will show you all files (including folders) in the current scope.</li>
+              <details>
+                <summary>Result</summary>
+                <img src="ls_terminal.png" alt="example succesful ls">
+        </li>
+        </details>
+      </ul>
+      <li>Use the <kbd>cd</kbd> command, which stands for <em>change directory</em>. Go to your desktop.</li>
+      <details>
+        <summary>Result</summary>
+        <ul>
+          <li><kbd>cd Desktop</kbd></li>
+          <li>Note the change in the two lines</li>
+          <img src="desktop_terminal.png" alt="showing desktop terminal">
+        </ul>
+      </details>
+      <br>
+      <li>Once we're in the desired working directory, now it's time to <b>clone</b>
+        <ul>
+          <li>Find the <em>kbd URL</em> of the project you want to get onto your device.</li>
+          <details id="cloneimg">
+            <summary>Reveal</summary>
+            <img src="link_github.png" width="400px" alt="">
+          </details>
+        </ul>
+      </li>
+      <li>With this link copied, go back to your terminal and type <kbd>git clone url destinationfolder</kbd></li>
+      <details>
+        <summary>Explanation of the command</summary>
+        <ul>
+          <li><kbd>git</kbd>: all git commands need this</li>
+          <li><kbd>clone</kbd>: <em>clones</em>, or copies the repository (online store) to our device</li>
+          <li><kbd>url</kbd>: the url of the repository, obtained using the method <a href="#cloneimg">above</a></li>
+          <li><kbd>destinationfolder</kbd>: specify a foldername where the contents of the repository will end up (it will create it for you)</li>
+        </ul>
+      </details>
+      <details>
+        <summary>Result</summary>
+        <img src="clonesuccess.png" height="100vw" alt="">
+      </details>
+    </ol>
+
+    </li>
+    </ul>
+    <li>The project is now on your device!</li>
+    </ol>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+</body>
+
+</html>

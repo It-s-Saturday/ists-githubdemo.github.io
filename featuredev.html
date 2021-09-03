@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+</head>
+
+<body>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a href="gitstart.html" class="nav-link">Getting Started</a>
+    </li>
+    <li class="nav-item">
+      <a href="gitchanges.html" class="nav-link active">Making Changes</a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link">Feature Development</a>
+    </li>
+  </ul>
+  <h1>Working on Features</h1>
+
+  <div class="container">
+    <p class="lead">The following steps ensure that the main branch doesn't get <strong>mangled</strong>.</p>
+    <ul class="list-inline">
+      We need to:
+      <li class="list-inline-item">1) <em>Checkout</em> a branch</li>
+      <li class="list-inline-item">2) <em>Push</em> to that branch</li>
+      <li class="list-inline-item">3) <em>Create</em> a pull request</li>
+    </ul>
+    <ol>
+      <li>Using <kbd>git checkout -b branchName</kbd>
+        <ul>
+          <li>This command will create a new branch for us to develop on.</li>
+          <li>You can still <kbd>git add .</kbd> and <kbd>git commit -m "your message"</kbd> like you did <a href="gitchanges.html">before</a></li>
+        </ul>
+      </li>
+      <li>Using <kbd>git push origin branchName</kbd>
+        <ul>
+          <li>This ensures that you're pushing your changes to the new branch.</li>
+        </ul>
+      </li>
+      <li>Creating a <code>pull request</code>
+        <ul>
+          <li>A <em>pull request</em> is a process where you 'propose' your changes to reviewers you assign.</li>
+          <li>You will see a prompt on the GitHub project page <details>
+              <summary>Result</summary>
+              <caption>(Also note the <code>2 branches</code>)</caption>
+<img class="img-fluid"src="demopull.png" alt="">
+            </details>
+            <details>
+              <summary>Result pt. 2</summary>
+              <img class="img-fluid" src="pullreq.png" alt="">
+            </details>
+        </ul>
+      </li>
+      <li>Profit $$$</li>
+    </ol>
+    Please drop a message in the discord if you need help ^^
+  </div>
+</body>
+
+</html>

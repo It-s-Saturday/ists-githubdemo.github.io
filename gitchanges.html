@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+</head>
+
+<body>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a href="gitstart.html" class="nav-link">Getting Started</a>
+    </li>
+    <li class="nav-item">
+      <a href="gitchanges.html" class="nav-link active">Making Changes</a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link">Feature Development</a>
+    </li>
+  </ul>
+  <h1>GitHub Making Changes</h1>
+
+  <div class="container">
+    <p class="lead">There are a bunch of <em>necessary</em> steps to get your changes tracked and merged.</p>
+    <ul>
+      <li>First thing's first: enter your repo using <kbd>cd</kbd></li>
+      <li>Use <kbd>git status</kbd> to check what changes have been made.</li>
+      <li><b>Note:</b> This is a general guide; for the proper workflow for a feature, please see <a href="featuredev.html">Feature Development</a></li>
+    </ul>
+
+    <details>
+      <summary>Secret</summary>
+      <ol>
+        <li>ADD</li>
+        <li>COMMIT</li>
+        <li>PUSH</li>
+        <li>
+          <details>
+            <summary>Another Secret</summary>
+            <ol>
+              <li>ADD</li>
+              <li>COMMIT</li>
+              <li>PUSH</li>
+            </ol>
+            <h2>These steps are REQUIREDDD</h2>
+          </details>
+        </li>
+      </ol>
+    </details>
+    <br>
+    <ol>
+      <li><kbd>git add filestotrack</kbd>
+        <ul>
+          <li>This command is used to <b>add</b> your files to be tracked by Git.</li>
+          <li>For <code>filestotrack</code>, I would usually use <kbd>.</kbd> or <kbd>*</kbd></li>
+          <li>For our purposes, use <kbd>git add *</kbd>. <em>This adds all files in your working directory.</em></li>
+          <details>
+            <summary>Result</summary>
+            <img src="gitaddgitstatus.png" alt="using git add then git status">
+          </details>
+        </ul>
+      </li>
+
+      <li><kbd>git commit -m "your message in between quotes"</kbd></li>
+      <ul>
+        <li>In your message, include a brief (but specific) explanation of what you changed.</li>
+        <details>
+          <summary>Result</summary>
+          <img src="gitcommit.png" alt="results of calling git commit">
+        </details>
+      </ul>
+      <li><kbd>git push origin branchname</kbd></li>
+      <ul>
+        <li>I doubt that the origin field will change, but <code>branchname</code> is important.</li>
+        <li>I would think of branches like <em>potential features</em>, waiting to merge. The main code
+          is located on the <code>main</code> or <code>master</code> branch
+          (naming convention depends on who you ask). We create branches to avoid messing with the
+          main source, in case anything we change goes wrong.</li>
+        <li>For this example, we do <kbd>git push origin master</kbd> since we're demonstrating working on
+          the <code>master</code> branch.</li>
+        <details>
+          <summary>Result</summary>
+          <img src="gitpush.png" alt="result of git push">
+        </details>
+      </ul>
+    </ol>
+
+  </div>
+</body>
+
+</html>
